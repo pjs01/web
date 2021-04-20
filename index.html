@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Theme Company</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .navbar{
+      background-color: darkorange;
+      border: none;     
+    }
+    .navbar a{
+      color: white !important;
+    }
+    .jumbotron{
+      background-color: darkorange;
+      color: white;
+      padding: 200px 25px;
+    }
+    .bg-grey {
+      background-color: #f6f6f6;
+    }
+    .container-fluid{
+      padding: 100px 25px;
+    }
+    .logo {
+      font-size: 200px;
+    }
+    .logo-small {
+      color: darkorange;
+      font-size: 50px;
+    }
+    .col-sm-4{
+      padding: 25px 0;
+    }
+    @media screen and (max-width:768px) {
+      .col-sm-4{
+        text-align: center;
+        padding: 25px 0;
+      }      
+    }
+    
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- Navigation ----------------------------------------------------------------->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">TIS.EDU</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">회사소개</a></li>
+        <li><a href="#history">회사연혁</a></li>
+        <li><a href="#services">과목소개</a></li>       
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navigation -->
+<!-- 타이틀 --------------------------------------------------------------------->
+<div class="jumbotron text-center">
+  <h1>TIS 정보기술교육센터 </h1>
+  <p>국비지원 IT전문교육기관</p>
+  <form class="form-inline" action="search.jsp">
+    <div class="input-group">
+      <input type="text" class="form-control" size="50" placeholder="검색어를 입력하세요" required>
+      <div class="input-group-btn">
+        <button class="btn btn-danger">Search</button>
+      </div>
+    </div>
+  </form>
+</div>
+<!-- 타이틀 -->
+<!-- 회사소개 -------------------------------------------------------------------->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">        
+      <h1>회사소개</h1>    
+      <p>TIS정보기술교육센터는 국비지원 IT전문교육기관입니다.</p>
+      <p>실무에서 사용할 수 있는 IT교육을 위해 노력하고 있습니다.</p>  
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+<!-- 회사소개 -->  
+<!-- 회사연혁 --------------------------------------------------------------------->
+<div id="history" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo"></span>
+    </div>
+    <div class="col-sm-8">
+      <h1>회사연혁</h1>
+      <p>2013년. TIS정보시스템 법인설립</p>
+      <p>2016년. 고용노동부 구직자과정 승인</p>
+      <p>2019년. 고용노동부 우수훈련기관 선정</p>
+    </div>
+  </div>  
+</div>
+<!-- 회사연혁 -->
+<!-- 과목소개 -------------------------------------------------------------->
+<div id="services" class="container-fluid text-center">
+  <h2>과목소개</h2>
+  <h4>주요 교육과목 안내</h4>
+  <div class="row" style="padding-top:10px;">
+    <div class="col-sm-4">
+      <span  class="glyphicon glyphicon-off logo-small"></span>
+      <h4>자바</h4>
+      <p>객체지향언어</p>
+    </div>
+    <div class="col-sm-4">
+      <span  class="glyphicon glyphicon-off logo-small"></span>
+      <h4>HTML</h4>
+      <p>웹표준언어</p>
+    </div>
+    <div class="col-sm-4">
+      <span  class="glyphicon glyphicon-off logo-small"></span>
+      <h4>CSS</h4>
+      <p>Cascading Style Sheet</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <span  class="glyphicon glyphicon-off logo-small"></span>
+      <h4>오라클</h4>
+      <p>관계형데이터베이스</p>
+    </div>
+    <div class="col-sm-4">
+      <span  class="glyphicon glyphicon-off logo-small"></span>
+      <h4>R</h4>
+      <p>데이터분석언어</p>
+    </div>
+    <div class="col-sm-4">
+      <span  class="glyphicon glyphicon-off logo-small"></span>
+      <h4>SPRING</h4>
+      <p>Back End Framework</p>
+    </div>
+  </div>
+</div>
+<!-- 과목소개 -->
+<!-- Contact ----------------------------------------------------------->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">Contact</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p><span class="glyphicon glyphicon-map-marker"></span>(우: 70255) 서울특별시 영등포구 선유로 130 (지번 : 양평동 3가 5-4번지),
+         에이스하이테크시티3차 2층(교무실 : 212호, 강의실: 202호, 210호, 211호)</p>
+      <p><span class="glyphicon glyphicon-phone"></span> 수강&입학문의 : 02-2069-1931 | 업무문의 : 02-2069-1930 | 팩스 : 02-2069-1932 </p>
+      <p><span class="glyphicon glyphicon-envelope"></span> admin@tisedu.co.kr</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6">
+          <input type="text" name="name" placeholder="name" class="form-control form-group">
+        </div>
+        <div class="col-sm-6">
+          <input type="text" name="email" placeholder="email" class="form-control form-group">
+        </div>
+      </div>
+      <textarea rows="10" name="comment" placeholder="comment" class="form-control form-group"></textarea>
+      <div class="row">
+        <div class="col-sm-12">
+          <input type="submit" value="등록" class="btn btn-default pull-right">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact -->
+</body>
+</html>
